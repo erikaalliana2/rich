@@ -1,0 +1,213 @@
+$color_1: white;
+$color_2: rgb(16, 247, 8);
+$color_3: black;
+$font-family_1: cinzel;
+$font-family_2: monospace;
+$font-family_3: "Courier New", Courier, monospace;
+$font-family_4: vt323;
+$font-family_5: "Times New Roman", Times, serif;
+$font-family_6: fantasy;
+$font-family_7: 'Times New Roman', Times, serif;
+$background-color_1: rgb(5, 5, 5);
+$background-color_2: rgb(16, 247, 8);
+$background-color_3: white;
+$background-color_4: black;
+
+h1 {
+	font-family: $font-family_1;
+	color: $color_1;
+	display: flex;
+	background-color: $background-color_1;
+}
+.info {
+	color: $color_1;
+}
+p {
+	font-family: $font-family_2;
+	font-size: 22px;
+	color: $color_1;
+}
+body {
+	background-color: $background-color_1;
+}
+.dibujos {
+	color: $color_1;
+}
+.ejemplos {
+	color: $color_1;
+	font-family: $font-family_3;
+}
+html {
+	font-size: 17px;
+}
+#cuidados {
+	font-family: $font-family_4;
+	font-size: x-large;
+	font-weight: bold;
+	color: $color_2;
+	text-decoration: underline;
+}
+.creado {
+	font-family: $font-family_5;
+	justify-content: center;
+	color: $color_1;
+	display: flex;
+}
+.nav-link {
+	font-family: $font-family_6;
+	color: $color_2;
+	&:hover {
+		background-color: $background-color_2;
+		text-decoration: underline;
+	}
+}
+.subti {
+	background-color: $background-color_2;
+	display: flex;
+	justify-content: center;
+	font-family: $font-family_4;
+	font-size: 25px;
+}
+.align-items-center {
+	background-color: $background-color_2;
+}
+.dudas {
+	background-color: $background-color_3;
+}
+.ig {
+	font-family: $font-family_4;
+	font-size: 25px;
+	color: $color_3;
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_1;
+		text-decoration: underline;
+	}
+}
+.fc {
+	font-family: $font-family_4;
+	font-size: 25px;
+	color: $color_3;
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_1;
+		text-decoration: underline;
+	}
+}
+.img-fluid {
+	max-width: 30%;
+}
+h2 {
+	font-family: $font-family_4;
+	color: $color_2;
+	text-decoration: underline;
+	font-size: 25px;
+}
+.grid-layout {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	text-align: center;
+}
+.grid-layout2 {
+    @extend.grid-layout
+}
+.imgd {
+	width: 300px;
+	height: 300px;
+	margin: 0px;
+	border: 10px solid white;
+}
+.imgp {
+    @extend.imgd;
+}
+.tatu {
+	text-decoration: underline;
+	font-family: $font-family_4;
+	color: $color_2;
+}
+.pier {
+    @extend .tatu;
+}
+.pfre {
+    @extend .tatu;
+}
+.insu {
+    @extend .tatu;
+}
+.servicios {
+    @extend .tatu;}
+.jo {
+    @extend .tatu;
+}
+img {
+	width: 100%;
+}
+.row {
+	display: flex;
+	padding: 5px;
+	flex-wrap: wrap;
+}
+.column {
+	flex: 30%;
+	padding: 5px;
+	img {
+		margin-top: 5px;
+	}
+}
+.materiales {
+	font-family: $font-family_4;
+	color: $color_2;
+	text-decoration: underline;
+}
+.img-preguntas {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	text-align: center;
+	gap: 10px;
+}
+.img-pf {
+	width: 350px;
+	height: 350px;
+}
+.img-joyas {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	text-align: center;
+	background-color: $background-color_1;
+}
+.oro {
+	@extend .img-joyas;
+}
+.zirconia {
+	@extend .img-joyas;
+}
+.Swarovski {
+	@extend .img-joyas;
+}
+.imgj {
+	width: 330px;
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h5 {
+	color: $color_1;
+	text-decoration: underline;
+	font-family: $font-family_2;
+}
+h4 {
+	color: $color_1;
+	font-family: $font-family_7;
+	text-decoration: underline;
+	text-align: center;
+}
+@media only screen and (max-widht: 500px) {
+	.column {
+		flex: 100%;
+	}
+}
+@media only screen and (min-widht: 501px) {
+	.column {
+		flex: 50%;
+	}
+}
